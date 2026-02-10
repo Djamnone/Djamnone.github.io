@@ -17,9 +17,6 @@
     --error: #ef4444;
     --border: #e2e8f0;
     
-    /* AJOUT: Couleur bleu ciel */
-    --sky-blue: #87ceeb;
-    
     /* Ombres */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -48,13 +45,13 @@
     --container-width: 1200px;
 }
 
-/* MODIFICATION: Thème sombre avec titres en bleu ciel */
+/* Thème sombre */
 [data-theme="dark"] {
     --primary: #3b82f6;
     --primary-dark: #1d4ed8;
     --primary-light: #1e3a8a;
-    --secondary: #87ceeb; /* CHANGÉ: Titres en bleu ciel */
-    --secondary-light: #b3e0f5; /* Bleu ciel plus clair */
+    --secondary: #f8fafc;
+    --secondary-light: #e2e8f0;
     --accent: #22d3ee;
     --accent-light: #164e63;
     --light: #0f172a;
@@ -86,12 +83,10 @@ body {
     transition: background-color var(--transition), color var(--transition);
 }
 
-/* MODIFICATION: Titres en bleu ciel en thème sombre */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     color: var(--secondary);
-    transition: color var(--transition);
 }
 
 h1 { font-size: 3.5rem; }
@@ -636,10 +631,6 @@ header.scrolled {
     margin-bottom: 3rem;
 }
 
-.about-intro h3 {
-    color: var(--secondary);
-}
-
 .about-tabs {
     background-color: var(--light-gray);
     border-radius: var(--radius);
@@ -884,7 +875,6 @@ header.scrolled {
 .service-title {
     margin-bottom: 1rem;
     transition: var(--transition);
-    color: var(--secondary);
 }
 
 .service-description {
@@ -1044,7 +1034,6 @@ header.scrolled {
 
 .project-title {
     margin-bottom: 0.75rem;
-    color: var(--secondary);
 }
 
 .project-description {
@@ -1146,18 +1135,14 @@ header.scrolled {
     margin-bottom: 0;
 }
 
-/* MODIFICATION: Liens sociaux alignés horizontalement */
 .contact-social h4 {
     color: white;
     margin-bottom: 1rem;
 }
 
-.contact-social .social-links {
+.social-links {
     display: flex;
     gap: 1rem;
-    flex-wrap: nowrap; /* Empêche le retour à la ligne */
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .social-link {
@@ -1170,7 +1155,6 @@ header.scrolled {
     justify-content: center;
     color: white;
     transition: var(--transition);
-    flex-shrink: 0; /* Empêche le rétrécissement */
 }
 
 .social-link:hover {
@@ -1314,10 +1298,6 @@ header.scrolled {
     color: #94a3b8;
 }
 
-[data-theme="dark"] .footer-description {
-    color: #b3e0f5; /* Bleu ciel clair pour la description en thème sombre */
-}
-
 .footer-title {
     color: white;
     font-size: 1.25rem;
@@ -1338,29 +1318,6 @@ header.scrolled {
 .footer-links a:hover {
     color: var(--accent);
     padding-left: 5px;
-}
-
-/* MODIFICATION: Liens sociaux dans le footer alignés horizontalement */
-.footer-social {
-    margin-top: 1rem;
-}
-
-.footer-social .social-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: nowrap; /* Empêche le retour à la ligne */
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer-social .social-link {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #94a3b8;
-}
-
-.footer-social .social-link:hover {
-    background-color: var(--accent);
-    color: white;
 }
 
 .newsletter-form {
@@ -1504,12 +1461,6 @@ header.scrolled {
     .back-to-top {
         right: 2rem;
     }
-    
-    /* Ajustement des liens sociaux sur tablette */
-    .contact-social .social-links,
-    .footer-social .social-links {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1576,10 +1527,6 @@ header.scrolled {
     .footer-legal {
         justify-content: center;
     }
-    
-    .footer-social .social-links {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 576px) {
@@ -1622,14 +1569,4 @@ header.scrolled {
     .back-to-top {
         right: 1rem;
     }
-    
-    /* Liens sociaux sur très petits écrans */
-    .social-links {
-        gap: 0.75rem;
     }
-    
-    .social-link {
-        width: 35px;
-        height: 35px;
-    }
-        }
