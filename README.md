@@ -1,4 +1,4 @@
-# Portfolio Alex Martin - Développeur Web Full Stack
+# Portfolio Eratus Djamnone- Développeur Web Full Stack
 
 Un portfolio professionnel, moderne et responsive pour un développeur web full stack.
 
