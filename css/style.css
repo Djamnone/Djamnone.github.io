@@ -4,18 +4,18 @@
     --primary: #2563eb;
     --primary-dark: #1d4ed8;
     --primary-light: #dbeafe;
-    --secondary: #0f172a;
+    --secondary: #2563eb; /* CHANGÉ: Titres en bleu (#2563eb) */
     --secondary-light: #1e293b;
     --accent: #06b6d4;
     --accent-light: #cffafe;
-    --light: #f8fafc;
-    --light-gray: #f1f5f9;
-    --gray: #64748b;
-    --dark: #1e293b;
+    --light: #ffffff; /* CHANGÉ: Background blanc */
+    --light-gray: #f8f9fa; /* CHANGÉ: Gris plus clair */
+    --gray: #495057; /* CHANGÉ: Texte en noir/gris foncé */
+    --dark: #212529; /* CHANGÉ: Texte principal en noir */
     --success: #10b981;
     --warning: #f59e0b;
     --error: #ef4444;
-    --border: #e2e8f0;
+    --border: #dee2e6; /* CHANGÉ: Bordure plus claire */
     
     /* Ombres */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -77,8 +77,8 @@ html {
 body {
     font-family: var(--font-primary);
     line-height: 1.6;
-    color: var(--dark);
-    background-color: var(--light);
+    color: var(--dark); /* Texte en noir */
+    background-color: var(--light); /* Background blanc */
     overflow-x: hidden;
     transition: background-color var(--transition), color var(--transition);
 }
@@ -86,7 +86,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
-    color: var(--secondary);
+    color: var(--secondary); /* Titres en bleu (#2563eb) */
 }
 
 h1 { font-size: 3.5rem; }
@@ -96,7 +96,7 @@ h4 { font-size: 1.3rem; }
 
 p {
     margin-bottom: 1rem;
-    color: var(--gray);
+    color: var(--gray); /* Texte en noir/gris foncé */
 }
 
 a {
@@ -360,7 +360,7 @@ header.scrolled {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--secondary); /* Logo en bleu */
 }
 
 .logo-highlight {
@@ -467,7 +467,7 @@ header.scrolled {
 
 .name {
     display: block;
-    color: var(--secondary);
+    color: var(--secondary); /* Nom en bleu */
 }
 
 .typing-container {
@@ -499,6 +499,7 @@ header.scrolled {
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
     max-width: 600px;
+    color: var(--gray);
 }
 
 .hero-btns {
@@ -631,6 +632,10 @@ header.scrolled {
     margin-bottom: 3rem;
 }
 
+.about-intro h3 {
+    color: var(--secondary); /* Titre "Développeur Full Stack passionné" en bleu */
+}
+
 .about-tabs {
     background-color: var(--light-gray);
     border-radius: var(--radius);
@@ -714,6 +719,7 @@ header.scrolled {
 
 .timeline-content h4 {
     margin-bottom: 0.25rem;
+    color: var(--secondary); /* Titres de timeline en bleu */
 }
 
 .certifications-list {
@@ -740,6 +746,7 @@ header.scrolled {
 .certification-item h4 {
     flex: 1;
     margin-bottom: 0;
+    color: var(--secondary); /* Titres de certifications en bleu */
 }
 
 .certification-item span {
@@ -767,7 +774,7 @@ header.scrolled {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
-    color: var(--secondary);
+    color: var(--secondary); /* Titres de catégories en bleu */
 }
 
 .category-title i {
@@ -875,11 +882,13 @@ header.scrolled {
 .service-title {
     margin-bottom: 1rem;
     transition: var(--transition);
+    color: var(--secondary); /* Titres de services en bleu */
 }
 
 .service-description {
     margin-bottom: 1.5rem;
     transition: var(--transition);
+    color: var(--gray);
 }
 
 .service-features {
@@ -1034,11 +1043,13 @@ header.scrolled {
 
 .project-title {
     margin-bottom: 0.75rem;
+    color: var(--secondary); /* Titres de projets en bleu */
 }
 
 .project-description {
     margin-bottom: 1rem;
     font-size: 0.95rem;
+    color: var(--gray);
 }
 
 .project-tech {
@@ -1320,6 +1331,30 @@ header.scrolled {
     padding-left: 5px;
 }
 
+/* MODIFICATION: Liens sociaux du footer alignés */
+.footer-social {
+    margin-top: 1rem;
+}
+
+.footer-social .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-social .social-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    flex-shrink: 0;
+}
+
+.footer-social .social-link:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
 .newsletter-form {
     margin-top: 1rem;
 }
@@ -1527,6 +1562,10 @@ header.scrolled {
     .footer-legal {
         justify-content: center;
     }
+    
+    .footer-social .social-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1568,5 +1607,14 @@ header.scrolled {
     
     .back-to-top {
         right: 1rem;
+    }
+    
+    .footer-social .social-links {
+        gap: 0.75rem;
+    }
+    
+    .footer-social .social-link {
+        width: 35px;
+        height: 35px;
     }
     }
