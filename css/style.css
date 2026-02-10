@@ -17,7 +17,7 @@
     --error: #ef4444;
     --border: #e2e8f0;
     
-    /* AJOUT: Couleur bleu ciel spécifique */
+    /* AJOUT: Couleur bleu ciel */
     --sky-blue: #87ceeb;
     
     /* Ombres */
@@ -48,13 +48,13 @@
     --container-width: 1200px;
 }
 
-/* Thème sombre */
+/* MODIFICATION: Thème sombre avec titres en bleu ciel */
 [data-theme="dark"] {
     --primary: #3b82f6;
     --primary-dark: #1d4ed8;
     --primary-light: #1e3a8a;
     --secondary: #87ceeb; /* CHANGÉ: Titres en bleu ciel */
-    --secondary-light: #b3e0f5; /* CHANGÉ: Version plus claire pour certains titres */
+    --secondary-light: #b3e0f5; /* Bleu ciel plus clair */
     --accent: #22d3ee;
     --accent-light: #164e63;
     --light: #0f172a;
@@ -63,10 +63,6 @@
     --dark: #f1f5f9;
     --border: #334155;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-    
-    /* AJOUT: Variables spécifiques au thème sombre */
-    --title-dark-color: #87ceeb; /* Bleu ciel pour les titres */
-    --sky-blue: #87ceeb; /* Conserve le bleu ciel */
 }
 
 /* ===== RESET & BASE ===== */
@@ -90,22 +86,12 @@ body {
     transition: background-color var(--transition), color var(--transition);
 }
 
-/* ===== TITRES EN BLEU CIEL EN THÈME SOMBRE ===== */
+/* MODIFICATION: Titres en bleu ciel en thème sombre */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     color: var(--secondary);
     transition: color var(--transition);
-}
-
-/* Application spécifique du bleu ciel en thème sombre */
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-    color: var(--sky-blue);
 }
 
 h1 { font-size: 3.5rem; }
@@ -477,12 +463,6 @@ header.scrolled {
     margin-bottom: 1.5rem;
 }
 
-/* Titres du hero en bleu ciel en thème sombre */
-[data-theme="dark"] .hero-title,
-[data-theme="dark"] .hero-title .name {
-    color: var(--sky-blue);
-}
-
 .greeting {
     display: block;
     font-size: 1.25rem;
@@ -656,6 +636,10 @@ header.scrolled {
     margin-bottom: 3rem;
 }
 
+.about-intro h3 {
+    color: var(--secondary);
+}
+
 .about-tabs {
     background-color: var(--light-gray);
     border-radius: var(--radius);
@@ -795,10 +779,6 @@ header.scrolled {
     color: var(--secondary);
 }
 
-[data-theme="dark"] .category-title {
-    color: var(--sky-blue);
-}
-
 .category-title i {
     font-size: 1.5rem;
     color: var(--primary);
@@ -905,10 +885,6 @@ header.scrolled {
     margin-bottom: 1rem;
     transition: var(--transition);
     color: var(--secondary);
-}
-
-[data-theme="dark"] .service-title {
-    color: var(--sky-blue);
 }
 
 .service-description {
@@ -1071,10 +1047,6 @@ header.scrolled {
     color: var(--secondary);
 }
 
-[data-theme="dark"] .project-title {
-    color: var(--sky-blue);
-}
-
 .project-description {
     margin-bottom: 1rem;
     font-size: 0.95rem;
@@ -1174,16 +1146,16 @@ header.scrolled {
     margin-bottom: 0;
 }
 
-/* ===== LIENS SOCIAUX ALIGNÉS HORIZONTALEMENT ===== */
+/* MODIFICATION: Liens sociaux alignés horizontalement */
 .contact-social h4 {
     color: white;
     margin-bottom: 1rem;
 }
 
-.social-links {
+.contact-social .social-links {
     display: flex;
     gap: 1rem;
-    flex-wrap: nowrap; /* AJOUT: Empêche le retour à la ligne */
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
     justify-content: flex-start;
     align-items: center;
 }
@@ -1198,7 +1170,7 @@ header.scrolled {
     justify-content: center;
     color: white;
     transition: var(--transition);
-    flex-shrink: 0; /* AJOUT: Empêche le rétrécissement */
+    flex-shrink: 0; /* Empêche le rétrécissement */
 }
 
 .social-link:hover {
@@ -1342,6 +1314,10 @@ header.scrolled {
     color: #94a3b8;
 }
 
+[data-theme="dark"] .footer-description {
+    color: #b3e0f5; /* Bleu ciel clair pour la description en thème sombre */
+}
+
 .footer-title {
     color: white;
     font-size: 1.25rem;
@@ -1364,7 +1340,7 @@ header.scrolled {
     padding-left: 5px;
 }
 
-/* Liens sociaux dans le footer alignés horizontalement */
+/* MODIFICATION: Liens sociaux dans le footer alignés horizontalement */
 .footer-social {
     margin-top: 1rem;
 }
@@ -1372,8 +1348,9 @@ header.scrolled {
 .footer-social .social-links {
     display: flex;
     gap: 1rem;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
     justify-content: flex-start;
+    align-items: center;
 }
 
 .footer-social .social-link {
@@ -1528,10 +1505,10 @@ header.scrolled {
         right: 2rem;
     }
     
-    /* Ajustement des liens sociaux sur mobile */
-    .social-links {
+    /* Ajustement des liens sociaux sur tablette */
+    .contact-social .social-links,
+    .footer-social .social-links {
         justify-content: center;
-        flex-wrap: wrap;
     }
 }
 
@@ -1655,4 +1632,4 @@ header.scrolled {
         width: 35px;
         height: 35px;
     }
-}
+        }
