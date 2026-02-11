@@ -1,6 +1,6 @@
 # Portfolio Eratus Djamnone - Développeur Web Full Stack
 
-![Portfolio Preview](images/profile.jpg)
+![Portfolio Preview](images/favicon.png)
 
 ## 📌 À PROPOS
 
