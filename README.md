@@ -65,3 +65,24 @@ Ceci est mon portfolio personnel de développeur web full stack basé au Tchad. 
 ---
 
 ## 📁 STRUCTURE DU PROJET
+mon-portfolio/
+│
+├── index.html                  # Page principale
+│
+├── CSS/                        # Feuilles de style
+│   ├── style.css              # Styles principaux
+│   ├── animations.css         # Animations globales
+│   └── modals.css             # Styles des modals
+│
+├── js/                        # JavaScript
+│   └── main.js               # FICHIER UNIQUE (toutes fonctionnalités)
+│
+├── images/                    # Images du site
+│   ├── profile.jpg           # Photo de profil
+│   ├── favicon.ico           # Favicon
+│   └── apple-touch-icon.png  # Icône Apple
+│
+├── documents/                 # Documents téléchargeables
+│   └── cv-eratus-djamnone.pdf # Curriculum Vitae
+│
+└── README.md                 # Documentation
