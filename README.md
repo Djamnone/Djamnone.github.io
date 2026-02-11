@@ -6,7 +6,7 @@
 
 Ceci est mon portfolio personnel de développeur web full stack basé au Tchad. Il présente mon parcours, mes compétences, mes services et mes projets réalisés. Le site est entièrement statique et optimisé pour un hébergement sur **GitHub Pages**.
 
-**Lien du site :** [https://eratusdjamnone.github.io](https://eratusdjamnone.github.io)
+**Lien du site :** [https://djamnone.github.io](https://djamnone.github.io)
 
 ---
 
