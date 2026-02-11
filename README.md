@@ -1,42 +1,67 @@
-# Portfolio Eratus Djamnone- Développeur Web Full Stack
+# Portfolio Eratus Djamnone - Développeur Web Full Stack
 
-Un portfolio professionnel, moderne et responsive pour un développeur web full stack.
+![Portfolio Preview](images/profile.jpg)
 
-## Fonctionnalités
+## 📌 À PROPOS
 
-### 🌟 Principales
-- Design moderne et professionnel
-- Responsive (mobile, tablette, desktop)
-- Mode sombre/clair
-- Animations fluides
-- Formulaire de contact fonctionnel
-- Filtrage des projets
-- Compteurs animés
-- Effet de frappe (typing effect)
+Ceci est mon portfolio personnel de développeur web full stack basé au Tchad. Il présente mon parcours, mes compétences, mes services et mes projets réalisés. Le site est entièrement statique et optimisé pour un hébergement sur **GitHub Pages**.
 
-### 🛠 Technologies utilisées
-- HTML5 sémantique
-- CSS3 avec variables CSS
-- JavaScript vanilla (ES6+)
-- Font Awesome pour les icônes
-- Google Fonts (Poppins, Roboto Mono)
+**Lien du site :** [https://eratusdjamnone.github.io](https://eratusdjamnone.github.io)
 
-### 📱 Responsive Design
-- Mobile-first approach
-- Adaptatif à toutes les tailles d'écran
-- Navigation mobile optimisée
-- Images responsives
+---
 
-### 🎨 Design System
-- Système de couleurs cohérent
-- Typographie hiérarchisée
-- Espacement cohérent
-- États de hover/focus accessibles
+## 🧑‍💻 INFORMATIONS PERSONNELLES
 
-### ⚡ Performances
-- Images optimisées (lazy loading)
-- CSS minifié
-- JavaScript asynchrone
-- Préchargement des ressources
+- **Nom :** Eratus Djamnone
+- **Localisation :** N'Djaména / Moundou / Léré, Tchad
+- **Expérience :** 3 ans
+- **Formation :** Licence en Informatique-Télécom, Université de Moundou (2019-2022)
+- **Lycée :** Lycée Collège Protestant Kaardal de Léré
+- **Certifications :** Cisco Networking Academy (CCNA, Cybersecurity, IT Essentials)
 
-## Structure du projet
+---
+
+## 🚀 FONCTIONNALITÉS
+
+### ✅ Core Features
+- **Design responsive** - Mobile first, adapté à tous les écrans
+- **Thème clair/sombre** - Basculable avec sauvegarde localStorage
+- **Animations fluides** - Typing effect, compteurs, barres de compétences
+- **Modals interactifs** - Détails des services avec "En savoir plus"
+- **WhatsApp Business** - Contact direct via formulaire et boutons
+- **Filtrage de projets** - Par catégorie (Frontend, Backend, Full Stack)
+- **Navigation smooth scroll** - Défilement fluide
+- **Menu hamburger** - Pour mobile
+- **Loading screen** - Écran de chargement élégant
+- **Back to top** - Bouton retour en haut
+
+### ✅ Intégration WhatsApp
+- **Numéro :** +235 65 79 94 68
+- **Formulaire de contact** → Données envoyées par WhatsApp
+- **Boutons spécifiques** → Messages personnalisés :
+  - "Travaillons ensemble"
+  - "Me contacter"
+  - "Discuter de ce projet" (depuis les modals)
+
+---
+
+## 🛠️ TECHNOLOGIES UTILISÉES
+
+### Frontend
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) - Structure sémantique
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) - Styles, animations, responsive
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) - Vanilla JS (ES6+)
+- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat&logo=font-awesome&logoColor=white) - Icônes
+- ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat&logo=google-fonts&logoColor=white) - Typographie Poppins & Roboto Mono
+
+### Outils & Méthodes
+- ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) - Versionnement
+- ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) - Hébergement
+- ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white) - Éditeur
+- Méthodologie BEM - Nommage CSS
+- Intersection Observer API - Animations au scroll
+- LocalStorage API - Sauvegarde du thème
+
+---
+
+## 📁 STRUCTURE DU PROJET
